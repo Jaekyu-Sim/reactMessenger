@@ -1,5 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import {Button, Form, Input} from "antd"
+import io from 'socket.io-client';
+import { Link } from "react-router-dom";
+
+const socket =  io.connect('http://localhost:5000');
+
 const Main = () => {
     const layout = {
         labelCol: {
@@ -16,20 +21,30 @@ const Main = () => {
     },
     };
 
-    const onSubmit = () => {
-        console.log("button clicked");
-    }
+    //const onSubmit = (e) => {
+        //console.log("button clicked");
+    //    console.log(e)
+        //e.preventDefault();
+    //    const name = userId;
+    //    socket.emit('message', name)
+    //    console.log(userId);
+    //}
+
 
     const [form] = Form.useForm();
+
+    const [userId, setUserId] = useState("");
+
+    
 
     return (
         <div style={{textAlign:"center"}}>
             <div>
-                <img src="../logo512.png">
+                <img src="../yalari.gif">
                 </img>
             </div>
             <div>
-                <Form {...layout} form={form} onFinish={onSubmit}>
+                <Form {...layout} form={form}>
                     <Form.Item
                         name="Name"
                         label="Name"
@@ -39,13 +54,15 @@ const Main = () => {
                         },
                         ]}
                     >
-                        <Input />
+                        <Input onChange={(e) => {setUserId(e.target.value)}}/>
                     </Form.Item>
 
                     <Form.Item {...tailLayout}>
-                        <Button type="primary" htmlType="submit">
-                            Submit
-                        </Button>
+                        <Link to={`/chat?userId=${userId}`}>
+                            <Button type="primary" htmlType="submit">
+                                Submit
+                            </Button>
+                        </Link>
                     </Form.Item>
                 </Form>
             </div>

@@ -1,10 +1,21 @@
-const express = require('express')
-const socketio = require('socket.io')
-const http = require('http')
+const app = require('express')()
+const server = require('http').createServer(app)
+const cors = require('cors')
+const io = require('socket.io')(server,{
+    cors : {
+        origin :"*",
+        credentials :true
+    }
+});
 
-const PORT = process.env.PORT || 5000
 
-const app = express();
-const server = http.createServer(app)
-const io = socketio(server)
-server.listen(PORT,()=>console.log(`서버가 ${PORT} 에서 시작되었어요`))
+io.on('connection', socket=>{
+    socket.on('message',({userId, message}) => {
+        io.emit('message',({userId, message}))
+        console.log("user ID : ", userId, ", message : ", message);
+    })
+})
+
+server.listen(5000, function(){
+    console.log('listening on port 5000');
+})
