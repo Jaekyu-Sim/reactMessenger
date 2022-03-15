@@ -26,22 +26,21 @@ const Chat = () => {
         socket.on('message',({userId,message})=>{
           setChat([...chat,{userId,message}])
         })
-
-        //console.log("chat : ", chat);
-      })
+      })//여기 수정해야함. 렌더링 될때마다 메시지 보내는것처럼 되어있으니, 나중에 [] 와 같은 렌더링 초기 1회에만 실행되는 식으로 변경 해야함.
     const onSubmit = (e) => {
         
         console.log("button clicked");
         console.log(e)
-        //e.preventDefault();
+        e.preventDefault();
         const message = msg;
         socket.emit('message', {userId, message})
         console.log(message);
         console.log("usesr Id : ", userId);
         setMsg("");
     }
-     const putEnter = () => {
+     const putEnter = (e) => {
          const message = msg
+         e.preventDefault();
          console.log("t : ", userId, message)
          socket.emit('message', {userId, message});
          setMsg("");
@@ -66,7 +65,7 @@ const Chat = () => {
                        value={msg} 
                        onPressEnter={putEnter}
                         />
-                <Button type="primary" onClick={(e) => {onSubmit()}}>Send</Button>
+                <Button type="primary" onClick={onSubmit}>Send</Button>
             </Input.Group>
         </div>
     )

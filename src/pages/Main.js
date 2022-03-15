@@ -21,22 +21,9 @@ const Main = () => {
     },
     };
 
-    //const onSubmit = (e) => {
-        //console.log("button clicked");
-    //    console.log(e)
-        //e.preventDefault();
-    //    const name = userId;
-    //    socket.emit('message', name)
-    //    console.log(userId);
-    //}
-
-
     const [form] = Form.useForm();
-
     const [userId, setUserId] = useState("");
-
     
-
     return (
         <div style={{textAlign:"center"}}>
             <div>
