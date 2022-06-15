@@ -4,11 +4,15 @@
 *  Socket
 *  Antd
 * * *
-![image](https://user-images.githubusercontent.com/27837607/173823159-55871ac9-1822-48b8-b46d-254aad34d9c7.png)
-### Main Page
-![image](https://user-images.githubusercontent.com/27837607/173823220-c94a2d35-6531-42f8-8b48-6ef070686e86.png)
-### Chat Page
 
+### Main Page
+![image](https://user-images.githubusercontent.com/27837607/173823159-55871ac9-1822-48b8-b46d-254aad34d9c7.png)
+
+### Chat Page
+![image](https://user-images.githubusercontent.com/27837607/173823220-c94a2d35-6531-42f8-8b48-6ef070686e86.png)
+
+
+### 실제 동작
 
 ![KakaoTalk_20220313_225519539](https://user-images.githubusercontent.com/27837607/173824025-224395b4-f393-4d1b-9088-22c5b7a38aae.gif)
 
@@ -16,7 +20,7 @@
 
 ![KakaoTalk_20220313_225519539_02](https://user-images.githubusercontent.com/27837607/173823571-9e38c055-de09-4487-9b69-664546129033.gif)
 
-### 실제 동작
+
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
