@@ -1,3 +1,21 @@
+# React 기반 Chatting Application
+## React-Create-App
+## Router(v6)
+## Socket
+## Antd
+
+![image](https://user-images.githubusercontent.com/27837607/173823159-55871ac9-1822-48b8-b46d-254aad34d9c7.png)
+### Main Page
+![image](https://user-images.githubusercontent.com/27837607/173823220-c94a2d35-6531-42f8-8b48-6ef070686e86.png)
+### Chat Page
+
+![image](https://user-images.githubusercontent.com/27837607/173823246-44848a90-a0ca-499b-9daa-d6198a9c9db6.png)
+![image](https://user-images.githubusercontent.com/27837607/173823269-73645f9c-c88f-4ed5-880b-9fcf3ffe216b.png)
+### 실제 동작
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
