@@ -10,7 +10,7 @@
 ### Chat Page
 
 
-![image](https://user-images.githu![KakaoTalk_20220313_225519539](https://user-images.githubusercontent.com/27837607/173823532-8b02af33-ff56-4c63-b176-3262c167d1f5.gif)
+![KakaoTalk_20220313_225519539](https://user-images.githubusercontent.com/27837607/173824025-224395b4-f393-4d1b-9088-22c5b7a38aae.gif)
 
 ![KakaoTalk_20220313_225519539_01](https://user-images.githubusercontent.com/27837607/173823558-f05cfe07-9f1b-45a2-90df-64b16ffeef1d.gif)
 
